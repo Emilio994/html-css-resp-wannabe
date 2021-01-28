@@ -29,7 +29,7 @@
 #steps .row>.central,
 #steps .row>.right {
   float: left;
-  width: 33%;
+  width: 100%;
 }
 
 #steps {
@@ -71,6 +71,97 @@ img {
 
 .clear {
   clear: both;
+}
+
+/* TABLET BREAK-POINT ROW */
+@media screen and (max-width: 1024px) {
+  /* COMMON */
+  body {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  .container {
+    max-width: 1024px;
+    font-size: 1.2em;
+    padding: 3%;
+  }
+
+  .row {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  h1 {
+    margin: 0 0 5vh 0;
+    font-weight: bolder;
+  }
+
+  h3 {
+    margin: 1vh 0;
+  }
+
+  img {
+    height: 150px;
+  }
+
+  /* BLOCCO LEZIONI */
+  #lezioni {
+    background-color: #e24f169c;
+    transition: background-color 1.5s;
+  }
+
+  #lezioni .row>.left {
+  float: left;
+  width: 49%;
+  }
+
+  #lezioni .row>.right {
+  float: right;
+  width: 49%;
+  }
+  /* BLOCCO STEPS */
+
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: left;
+    width: 30%;
+  }
+
+  #steps .row>.central {
+    margin: 0 5%;
+  }
+
+  /* BLOCCO PERCHE */
+  #why {
+    background-color: #e24f169c;
+    transition: background-color 1.5s;
+  }
+
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    width: 30%;
+    margin-top: 0;
+    float: left;
+  }
+
+  #why .row>.second {
+    margin: 0 5%;
+  }
+
+  #why .row img {
+    background-color: #428bca;
+    border-radius: 50%;
+    padding: 25px;
+    height: 90px;
+  }
+
+  #why hr {
+    display: none;
+  }
 }
 
 /* BREAK-POINT ROW */
@@ -147,6 +238,10 @@ img {
   #why .row>.third {
     width: 100%;
     margin-top: 0;
+  }
+
+  #why .row>.second {
+    margin: 3vh 0;
   }
 
   #why .row img {
